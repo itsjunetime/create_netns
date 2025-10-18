@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+set -euxo pipefail
+
 if [ "$#" -ne 5 ]
 then
 	echo "Usage: \`create_netns.sh <new_netns_name> <ifaces_in_netns> <default_iface_for_netns> <virtual_eth_in_netns>=<network> <virtual_eth_outside_netns>=<network>\`"
