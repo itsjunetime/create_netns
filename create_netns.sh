@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-if [ "$#" -ne 4 ]
+if [ "$#" -ne 5 ]
 then
 	echo "Usage: \`create_netns.sh <new_netns_name> <ifaces_in_netns> <default_iface_for_netns> <virtual_eth_in_netns>=<network> <virtual_eth_outside_netns>=<network>\`"
 	echo "Example: \`create_netns.sh vpnns eth0,tun0 tun0 vethinvpn=10.0.1.0/24 vethoutvpn=10.0.2.0/24\`"
